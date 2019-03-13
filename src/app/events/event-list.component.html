@@ -1,7 +1,11 @@
 <div>
   <h1>Upcomming Angular Events</h1>
   <hr>
+  <div class="row">
+    <div *ngFor = "let event of events" class="col-md-5">
   <event-thumnil
-    (eventClick) = "handledEventClicked($event)"
+    (click) = "handleThumbnailClick(event.name)"
    [event]= "event"></event-thumnil>
+  </div>
+</div>
 </div>

@@ -13,9 +13,4 @@ export class EventThumnilComponent implements OnInit {
 
   ngOnInit() {
   }
-  
-  handleClick(){
-    this.eventClick.emit(this.event.name);
-  }
-
 }

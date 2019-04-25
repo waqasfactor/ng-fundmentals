@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
   CreateEventComponent,
   EventListComponent,
@@ -27,6 +28,8 @@ import { ErrorsComponent } from './errors/errors.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     EventsListResolver,
@@ -39,5 +42,5 @@ export class AppModule { }
 export function checkDirtyState(component: CreateEventComponent) {
  if(component.isDirty)
  return window.confirm('Ýou have not saved this event, do you really want to cancel?')
-  return false
+  return true
 }

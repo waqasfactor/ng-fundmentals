@@ -8,11 +8,14 @@ import {
   EventListComponent,
   EventDetailsComponent,
   EventThumnilComponent,
-  EventsListResolver
+  EventsListResolver,
+  CreateSessionComponent
 } from './events/index';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ErrorsComponent } from './errors/errors.component';
+import { SessionListComponent } from './events/event-details/session-list/session-list.component';
+import { CollapsibleWellComponent } from './common/collapsible-well/collapsible-well.component';
 
 
 @NgModule({
@@ -24,6 +27,9 @@ import { ErrorsComponent } from './errors/errors.component';
     EventDetailsComponent,
     CreateEventComponent,
     ErrorsComponent,
+    CreateSessionComponent,
+    SessionListComponent,
+    CollapsibleWellComponent,
   ],
   imports: [
     BrowserModule,

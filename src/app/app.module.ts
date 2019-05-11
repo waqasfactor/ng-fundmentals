@@ -9,7 +9,8 @@ import {
   EventDetailsComponent,
   EventThumnilComponent,
   EventsListResolver,
-  CreateSessionComponent
+  CreateSessionComponent,
+  DurationPipe
 } from './events/index';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -30,6 +31,7 @@ import { CollapsibleWellComponent } from './common/collapsible-well/collapsible-
     CreateSessionComponent,
     SessionListComponent,
     CollapsibleWellComponent,
+    DurationPipe,
   ],
   imports: [
     BrowserModule,

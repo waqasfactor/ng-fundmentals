@@ -14,6 +14,7 @@ export class EventDetailsComponent implements OnInit {
   event:IEvent;
   addMode: boolean;
   filterBy: string = "all";
+  sortBy: string = "votes";
   constructor(private evetService: EventService, private route : ActivatedRoute) { }
 
   ngOnInit() {
